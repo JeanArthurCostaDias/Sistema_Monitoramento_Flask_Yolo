@@ -82,8 +82,8 @@ def generate_mjpeg_stream(rtsp_url_1, rtsp_url_2, model, classes_interesse, clas
 # Rota do servidor para exibir o vídeo MJPEG
 @app.route('/video_feed')
 def video_feed():
-    rtsp_url_1 = "rtsp://admin:Nubia456@192.168.1.9:554/onvif1"  # Substitua com o RTSP da primeira câmera
-    rtsp_url_2 = "rtsp://admin:Nubia456@192.168.1.11:554/onvif1"  # Substitua com o RTSP da segunda câmera
+    rtsp_url_1 = %%%%  # Substitua com o RTSP da primeira câmera
+    rtsp_url_2 = %%%% # Substitua com o RTSP da segunda câmera
     weights_path = "yolo-Weights/yolov8n.pt"
     classes_interesse = [0, 2, 16]  # Exemplo de classes de interesse
     classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
